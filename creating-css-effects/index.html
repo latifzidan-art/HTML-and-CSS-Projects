@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating CSS Effects</title>
+
+  <!-- keeping the CSS in its own file this time -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Creating CSS Effects</h1>
+    <p>A practice page where I try out different CSS effects</p>
+  </header>
+
+  <main>
+
+    <!-- SHADOWS -->
+    <section>
+      <h2>1. Shadows</h2>
+      <p>Using <code>box-shadow</code> and <code>text-shadow</code>.</p>
+
+      <div class="box box-shadow">box-shadow</div>
+      <h3 class="text-shadow">This heading has a text shadow</h3>
+    </section>
+
+    <!-- ROUNDED CORNERS -->
+    <section>
+      <h2>2. Rounded Corners</h2>
+      <p>Using <code>border-radius</code> to round the edges.</p>
+
+      <div class="box rounded">rounded</div>
+      <div class="box circle">circle</div>
+    </section>
+
+    <!-- GRADIENTS -->
+    <section>
+      <h2>3. Gradients</h2>
+      <p>Backgrounds made with <code>linear-gradient</code> instead of one flat color.</p>
+
+      <div class="box gradient1">gradient</div>
+      <div class="box gradient2">another one</div>
+    </section>
+
+    <!-- OPACITY -->
+    <section>
+      <h2>4. Opacity</h2>
+      <p>The same box at different <code>opacity</code> values.</p>
+
+      <div class="box op100">100%</div>
+      <div class="box op60">60%</div>
+      <div class="box op30">30%</div>
+    </section>
+
+    <!-- HOVER + TRANSITION -->
+    <section>
+      <h2>5. Hover &amp; Transitions</h2>
+      <p>Hover your mouse over these to see them change. The
+         <code>transition</code> makes it change smoothly instead of instantly.</p>
+
+      <div class="box hover-color">hover me</div>
+      <div class="box hover-grow">grow</div>
+      <a href="#" class="button">Hover Button</a>
+    </section>
+
+    <!-- TRANSFORMS -->
+    <section>
+      <h2>6. Transforms</h2>
+      <p>Using <code>transform</code> to rotate, scale and skew things.</p>
+
+      <div class="box rotate">rotate</div>
+      <div class="box scale">scale</div>
+      <div class="box skew">skew</div>
+    </section>
+
+    <!-- IMAGE EFFECTS -->
+    <section>
+      <h2>7. Image Effects</h2>
+      <p>Effects on images using <code>filter</code>. Hover the last one!</p>
+
+      <img src="images/photo1.jpg" alt="Mountain photo" class="img-normal">
+      <img src="images/photo2.jpg" alt="Lake photo" class="img-gray">
+      <img src="images/photo3.jpg" alt="Hills photo" class="img-hover">
+    </section>
+
+    <!-- ANIMATION -->
+    <section>
+      <h2>8. Animation</h2>
+      <p>A simple <code>@keyframes</code> animation that makes the box bounce.</p>
+
+      <div class="box bounce">bounce</div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made by Abdalatif Zidan for my HTML &amp; CSS course.</p>
+  </footer>
+
+</body>
+</html>
