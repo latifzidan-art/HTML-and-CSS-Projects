@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academy Cinemas</title>
+
+  <!-- Bootstrap 5 from the CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- a little bit of my own CSS on top of Bootstrap -->
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+    }
+    .movie-card img {
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR (Bootstrap) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🎬 Academy Cinemas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#book">Book Tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Academy Cinemas</h1>
+      <p class="lead">The best place to watch the latest movies in town</p>
+      <a href="#movies" class="btn btn-danger btn-lg mt-3">See What's Playing</a>
+    </div>
+  </section>
+
+  <!-- MOVIES GRID -->
+  <section id="movies" class="container my-5">
+    <h2 class="text-center mb-4">Now Showing</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie1.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">The Last Horizon</h5>
+            <p class="card-text">A thrilling sci-fi adventure across the stars.</p>
+            <span class="badge bg-secondary">Sci-Fi</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie2.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">Midnight Chase</h5>
+            <p class="card-text">A fast paced action movie you won't forget.</p>
+            <span class="badge bg-secondary">Action</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie3.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">Love in Paris</h5>
+            <p class="card-text">A heartwarming romance set in the city of lights.</p>
+            <span class="badge bg-secondary">Romance</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie4.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">The Haunting</h5>
+            <p class="card-text">A scary horror film that will keep you up at night.</p>
+            <span class="badge bg-secondary">Horror</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie5.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">Comedy Night</h5>
+            <p class="card-text">The funniest movie of the year, laughs guaranteed.</p>
+            <span class="badge bg-secondary">Comedy</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card movie-card h-100 shadow-sm">
+          <img src="images/movie6.jpg" class="card-img-top" alt="Movie poster">
+          <div class="card-body">
+            <h5 class="card-title">Wild Kingdom</h5>
+            <p class="card-text">An amazing nature documentary for the whole family.</p>
+            <span class="badge bg-secondary">Documentary</span>
+            <a href="#book" class="btn btn-outline-danger btn-sm float-end">Book</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="book" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Book Your Tickets</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Movie</label>
+              <select class="form-select">
+                <option>The Last Horizon</option>
+                <option>Midnight Chase</option>
+                <option>Love in Paris</option>
+                <option>The Haunting</option>
+                <option>Comedy Night</option>
+                <option>Wild Kingdom</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Number of Tickets</label>
+              <input type="number" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container my-5 text-center">
+    <h2>Contact Us</h2>
+    <p>123 Movie Street, Mississauga, ON &bull; (905) 555-7890</p>
+    <p>Open daily from 11am until midnight.</p>
+  </section>
+
+  <!-- FOOTER (built with Bootstrap - required for this assignment) -->
+  <footer class="bg-dark text-white pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Academy Cinemas</h5>
+          <p class="small">Your favorite movie theatre since 2010.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#movies" class="text-white text-decoration-none">Movies</a></li>
+            <li><a href="#book" class="text-white text-decoration-none">Book Tickets</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <p class="small">Facebook &bull; Instagram &bull; Twitter</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center small mb-0">&copy; 2026 Academy Cinemas. Made by Abdalatif Zidan.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript for the navbar toggle etc. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
